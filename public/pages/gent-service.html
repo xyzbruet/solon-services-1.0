@@ -1,0 +1,142 @@
+<div class="gents-services-module">
+    <div class="service-filters mb-4">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-outline-primary active" data-category="all">
+                <i class="fas fa-th"></i> All
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-category="hair">
+                <i class="fas fa-cut"></i> Hair
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-category="grooming">
+                <i class="fas fa-user-tie"></i> Grooming
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-category="skin">
+                <i class="fas fa-spa"></i> Skin
+            </button>
+        </div>
+    </div>
+
+    <div class="services-grid" id="gentsServicesGrid">
+        <div class="service-category" data-category="hair">
+            <h3 class="category-title"><i class="fas fa-cut"></i> Hair Services</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" data-service-id="19">
+                        <div class="service-icon"><i class="fas fa-cut"></i></div>
+                        <h4 class="service-name">Men's Haircut</h4>
+                        <p class="service-description">Professional haircut with styling</p>
+                        <div class="service-details">
+                            <span class="service-price">$35</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 30 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(19)">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" data-service-id="24">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h4 class="service-name">Men's Hair Color</h4>
+                        <p class="service-description">Natural-looking hair coloring for men</p>
+                        <div class="service-details">
+                            <span class="service-price">$75</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 60 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(24)">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category" data-category="grooming">
+            <h3 class="category-title"><i class="fas fa-user-tie"></i> Grooming Services</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card popular-badge" data-service-id="20">
+                        <div class="popular-tag"><i class="fas fa-star"></i> Popular</div>
+                        <div class="service-icon"><i class="fas fa-scissors"></i></div>
+                        <h4 class="service-name">Beard Trim & Shaping</h4>
+                        <p class="service-description">Precision beard trimming and shaping</p>
+                        <div class="service-details">
+                            <span class="service-price">$25</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 20 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(20)">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card popular-badge" data-service-id="21">
+                        <div class="popular-tag"><i class="fas fa-star"></i> Popular</div>
+                        <div class="service-icon"><i class="fas fa-shaving-cream"></i></div>
+                        <h4 class="service-name">Hot Towel Shave</h4>
+                        <p class="service-description">Traditional hot towel shave with premium products</p>
+                        <div class="service-details">
+                            <span class="service-price">$40</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 30 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(21)">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card popular-badge" data-service-id="23">
+                        <div class="popular-tag"><i class="fas fa-star"></i> Popular</div>
+                        <div class="service-icon"><i class="fas fa-cut"></i></div>
+                        <h4 class="service-name">Hair & Beard Combo</h4>
+                        <p class="service-description">Complete haircut and beard grooming package</p>
+                        <div class="service-details">
+                            <span class="service-price">$55</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 50 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(23)">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category" data-category="skin">
+            <h3 class="category-title"><i class="fas fa-spa"></i> Skin Care Services</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" data-service-id="22">
+                        <div class="service-icon"><i class="fas fa-spa"></i></div>
+                        <h4 class="service-name">Men's Facial</h4>
+                        <p class="service-description">Deep cleansing facial designed for men's skin</p>
+                        <div class="service-details">
+                            <span class="service-price">$70</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 60 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(22)">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" data-service-id="25">
+                        <div class="service-icon"><i class="fas fa-head-side-virus"></i></div>
+                        <h4 class="service-name">Scalp Treatment</h4>
+                        <p class="service-description">Therapeutic scalp treatment with massage</p>
+                        <div class="service-details">
+                            <span class="service-price">$50</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 45 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(25)">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const filterButtons = document.querySelectorAll('.service-filters button');
+    const serviceCategories = document.querySelectorAll('.service-category');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.dataset.category;
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            serviceCategories.forEach(cat => {
+                cat.style.display = (category === 'all' || cat.dataset.category === category) ? 'block' : 'none';
+            });
+        });
+    });
+})();
+</script>

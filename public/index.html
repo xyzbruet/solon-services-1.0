@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Salon - Professional Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <div class="container-fluid">
+            <div class="navbar-content">
+                <div class="brand">
+                    <i class="fas fa-gem"></i>
+                    <span>Luxe Salon</span>
+                </div>
+                
+                <button class="mobile-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-links">
+                    <li><a href="#" class="active" data-page="home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#" data-page="services"><i class="fas fa-cut"></i> Services</a></li>
+                    <li><a href="#" data-page="loyalty"><i class="fas fa-star"></i> Loyalty Card</a></li>
+                    <li><a href="#" data-page="admin"><i class="fas fa-user-shield"></i> Admin</a></li>
+                </ul>
+
+                <button class="btn-book-nav">BOOK APPOINTMENT</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="layout-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <i class="fas fa-gem"></i>
+                <span>LUXE SALON</span>
+            </div>
+
+            <div class="sidebar-section-title">SERVICES</div>
+
+            <!-- Gender Buttons -->
+            <div class="gender-tabs">
+                <button class="gender-tab active" data-gender="women">
+                    <i class="fas fa-female"></i> LADIES
+                </button>
+                <button class="gender-tab" data-gender="men">
+                    <i class="fas fa-male"></i> GENTS
+                </button>
+            </div>
+
+            <!-- Women's Categories -->
+            <div id="women-categories" class="category-menu">
+                <div class="category-item expandable">
+                    <div class="category-header">
+                        <span>SKIN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="subcategory-list">
+                        <a href="#" data-service="facial">Facials</a>
+                        <a href="#" data-service="body-care">Body Care</a>
+                        <a href="#" data-service="cleanup">Clean Up</a>
+                    </div>
+                </div>
+
+                <div class="category-item expandable">
+                    <div class="category-header">
+                        <span>HAIR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="subcategory-list">
+                        <a href="#" data-service="haircut">Haircut</a>
+                        <a href="#" data-service="colors">Colors</a>
+                        <a href="#" data-service="texture">Texture</a>
+                        <a href="#" data-service="hair-spa">Hair Spa</a>
+                        <a href="#" data-service="hair-style">Hair Style</a>
+                    </div>
+                </div>
+
+                <div class="category-item expandable">
+                    <div class="category-header">
+                        <span>MAKEUP</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="subcategory-list">
+                        <a href="#" data-service="party-makeup">Party Makeup</a>
+                        <a href="#" data-service="bridal-makeup">Bridal Makeup</a>
+                        <a href="#" data-service="makeup">Makeup</a>
+                    </div>
+                </div>
+
+                <div class="category-item expandable">
+                    <div class="category-header">
+                        <span>HAND & FEET</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="subcategory-list">
+                        <a href="#" data-service="manicure">Manicure</a>
+                        <a href="#" data-service="pedicure">Pedicure</a>
+                        <a href="#" data-service="nails">Nails</a>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header standalone" data-page="loyalty">
+                        <span>LOYALTY CARD</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Men's Categories (hidden by default) -->
+            <div id="men-categories" class="category-menu" style="display: none;">
+                <div class="category-item expandable">
+                    <div class="category-header">
+                        <span>HAIR</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="subcategory-list">
+                        <a href="#" data-service="mens-haircut">Haircut</a>
+                        <a href="#" data-service="mens-color">Hair Color</a>
+                    </div>
+                </div>
+
+                <div class="category-item expandable">
+                    <div class="category-header">
+                        <span>GROOMING</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="subcategory-list">
+                        <a href="#" data-service="beard-trim">Beard Trim</a>
+                        <a href="#" data-service="hot-shave">Hot Towel Shave</a>
+                        <a href="#" data-service="combo">Hair & Beard Combo</a>
+                    </div>
+                </div>
+
+                <div class="category-item expandable">
+                    <div class="category-header">
+                        <span>SKIN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="subcategory-list">
+                        <a href="#" data-service="mens-facial">Men's Facial</a>
+                        <a href="#" data-service="scalp">Scalp Treatment</a>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header standalone" data-page="loyalty">
+                        <span>LOYALTY CARD</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search services..." id="searchInput">
+            </div>
+
+            <div id="content-area">
+                <!-- Content loads here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

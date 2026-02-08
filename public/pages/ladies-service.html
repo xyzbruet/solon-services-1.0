@@ -1,0 +1,107 @@
+<div class="ladies-services-module">
+    <div class="service-filters mb-4">
+        <div class="btn-group flex-wrap" role="group">
+            <button type="button" class="btn btn-outline-pink active" data-category="all">
+                <i class="fas fa-th"></i> All
+            </button>
+            <button type="button" class="btn btn-outline-pink" data-category="hair">
+                <i class="fas fa-cut"></i> Hair
+            </button>
+            <button type="button" class="btn btn-outline-pink" data-category="makeup">
+                <i class="fas fa-palette"></i> Makeup
+            </button>
+            <button type="button" class="btn btn-outline-pink" data-category="hands-feet">
+                <i class="fas fa-hand-sparkles"></i> Hands & Feet
+            </button>
+        </div>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-category" data-category="hair">
+            <h3 class="category-title"><i class="fas fa-cut"></i> Hair Services</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card popular-badge">
+                        <div class="popular-tag"><i class="fas fa-star"></i> Popular</div>
+                        <div class="service-icon"><i class="fas fa-cut"></i></div>
+                        <h4>Classic Haircut</h4>
+                        <p>Professional haircut tailored to your style</p>
+                        <div class="service-details">
+                            <span class="service-price">$45</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 45 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(1)">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card popular-badge">
+                        <div class="popular-tag"><i class="fas fa-star"></i> Popular</div>
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h4>Hair Coloring</h4>
+                        <p>Full hair coloring with premium products</p>
+                        <div class="service-details">
+                            <span class="service-price">$120</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 2-3 hrs</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(2)">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category" data-category="makeup">
+            <h3 class="category-title"><i class="fas fa-palette"></i> Makeup Services</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card popular-badge">
+                        <div class="popular-tag"><i class="fas fa-star"></i> Popular</div>
+                        <div class="service-icon"><i class="fas fa-crown"></i></div>
+                        <h4>Bridal Makeup</h4>
+                        <p>Complete bridal makeup with trial session</p>
+                        <div class="service-details">
+                            <span class="service-price">$300</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 2 hrs</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(8)">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category" data-category="hands-feet">
+            <h3 class="category-title"><i class="fas fa-hand-sparkles"></i> Hands & Feet</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card popular-badge">
+                        <div class="popular-tag"><i class="fas fa-star"></i> Popular</div>
+                        <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+                        <h4>Classic Manicure</h4>
+                        <p>Complete hand care with polish</p>
+                        <div class="service-details">
+                            <span class="service-price">$35</span>
+                            <span class="service-duration"><i class="fas fa-clock"></i> 45 min</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm" onclick="viewServiceDetails(11)">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const filterButtons = document.querySelectorAll('.service-filters button');
+    const serviceCategories = document.querySelectorAll('.service-category');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.dataset.category;
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            serviceCategories.forEach(cat => {
+                cat.style.display = (category === 'all' || cat.dataset.category === category) ? 'block' : 'none';
+            });
+        });
+    });
+})();
+</script>

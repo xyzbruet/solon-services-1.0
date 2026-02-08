@@ -1,0 +1,119 @@
+<div class="loyalty-card-module">
+    <div class="loyalty-tiers mb-5">
+        <h3 class="text-center mb-4">Membership Tiers</h3>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="tier-card bronze-tier">
+                    <div class="tier-icon"><i class="fas fa-medal"></i></div>
+                    <h4>Bronze</h4>
+                    <p class="tier-range">0-199 pts</p>
+                    <div class="tier-benefit">5% OFF</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tier-card silver-tier">
+                    <div class="tier-icon"><i class="fas fa-medal"></i></div>
+                    <h4>Silver</h4>
+                    <p class="tier-range">200-499 pts</p>
+                    <div class="tier-benefit">10% OFF</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tier-card gold-tier">
+                    <div class="tier-icon"><i class="fas fa-medal"></i></div>
+                    <h4>Gold</h4>
+                    <p class="tier-range">500-999 pts</p>
+                    <div class="tier-benefit">15% OFF</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tier-card platinum-tier">
+                    <div class="tier-icon"><i class="fas fa-crown"></i></div>
+                    <h4>Platinum</h4>
+                    <p class="tier-range">1000+ pts</p>
+                    <div class="tier-benefit">20% OFF</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="loyalty-card-actions">
+                <ul class="nav nav-tabs justify-content-center mb-4">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#check-card">
+                            <i class="fas fa-search me-2"></i>Check Card
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#create-card">
+                            <i class="fas fa-plus me-2"></i>Create Card
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="check-card">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <h4 class="text-center mb-4">Check Your Loyalty Card</h4>
+                                <form id="checkCardForm">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="checkEmail" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-search me-2"></i>Check My Card
+                                    </button>
+                                </form>
+                                <div id="cardDisplayArea" class="mt-4" style="display: none;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="create-card">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <h4 class="text-center mb-4">Create Loyalty Card</h4>
+                                <form id="createCardForm">
+                                    <div class="mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="createName" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="createEmail" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="createPhone" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-success w-100">
+                                        <i class="fas fa-plus me-2"></i>Create My Card
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="module">
+import { checkLoyaltyCard, createLoyaltyCard } from '../js/modules/loyalty-module.js';
+document.getElementById('checkCardForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    await checkLoyaltyCard(document.getElementById('checkEmail').value);
+});
+document.getElementById('createCardForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    await createLoyaltyCard({
+        name: document.getElementById('createName').value,
+        email: document.getElementById('createEmail').value,
+        phone: document.getElementById('createPhone').value
+    });
+});
+</script>

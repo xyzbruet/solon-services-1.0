@@ -1,0 +1,192 @@
+{
+  "women": {
+    "facial": [
+      {
+        "id": 1,
+        "name": "Signature Gold Facial",
+        "description": "Luxurious gold-infused facial for radiant, glowing skin",
+        "price": 2500,
+        "duration": "60 min",
+        "icon": "fas fa-spa",
+        "popular": true
+      },
+      {
+        "id": 2,
+        "name": "Anti-Aging Facial",
+        "description": "Reduce fine lines and wrinkles with our advanced treatment",
+        "price": 3000,
+        "duration": "75 min",
+        "icon": "fas fa-spa"
+      },
+      {
+        "id": 3,
+        "name": "Deep Cleansing Facial",
+        "description": "Remove impurities and refresh your skin",
+        "price": 1800,
+        "duration": "45 min",
+        "icon": "fas fa-spa"
+      },
+      {
+        "id": 4,
+        "name": "Hydrating Facial",
+        "description": "Intense moisture boost for dry, dehydrated skin",
+        "price": 2200,
+        "duration": "60 min",
+        "icon": "fas fa-spa"
+      }
+    ],
+    "body-care": [
+      {
+        "id": 5,
+        "name": "Full Body Massage",
+        "description": "Relaxing massage to relieve stress and tension",
+        "price": 3500,
+        "duration": "90 min",
+        "icon": "fas fa-hands",
+        "popular": true
+      },
+      {
+        "id": 6,
+        "name": "Body Scrub & Polish",
+        "description": "Exfoliate and smoothen your skin",
+        "price": 2800,
+        "duration": "60 min",
+        "icon": "fas fa-hands"
+      }
+    ],
+    "cleanup": [
+      {
+        "id": 8,
+        "name": "Fruit Cleanup",
+        "description": "Natural fruit-based skin cleanup",
+        "price": 1200,
+        "duration": "30 min",
+        "icon": "fas fa-lemon"
+      },
+      {
+        "id": 9,
+        "name": "Charcoal Cleanup",
+        "description": "Deep pore cleansing with activated charcoal",
+        "price": 1500,
+        "duration": "40 min",
+        "icon": "fas fa-lemon"
+      }
+    ],
+    "haircut": [
+      {
+        "id": 10,
+        "name": "Hair Cut & Style",
+        "description": "Professional haircut with expert styling",
+        "price": 1500,
+        "duration": "45 min",
+        "icon": "fas fa-cut",
+        "popular": true
+      },
+      {
+        "id": 11,
+        "name": "Hair Trim",
+        "description": "Quick trim to maintain your current style",
+        "price": 800,
+        "duration": "30 min",
+        "icon": "fas fa-cut"
+      }
+    ],
+    "colors": [
+      {
+        "id": 13,
+        "name": "Global Hair Color",
+        "description": "Full head professional hair coloring",
+        "price": 3500,
+        "duration": "120 min",
+        "icon": "fas fa-palette",
+        "popular": true
+      },
+      {
+        "id": 14,
+        "name": "Highlights",
+        "description": "Add dimension with beautiful highlights",
+        "price": 4500,
+        "duration": "150 min",
+        "icon": "fas fa-palette"
+      }
+    ],
+    "manicure": [
+      {
+        "id": 33,
+        "name": "Classic Manicure",
+        "description": "Traditional nail care and polish",
+        "price": 800,
+        "duration": "30 min",
+        "icon": "fas fa-hand-sparkles"
+      },
+      {
+        "id": 34,
+        "name": "Spa Manicure",
+        "description": "Luxurious hand treatment with massage",
+        "price": 1200,
+        "duration": "45 min",
+        "icon": "fas fa-hand-sparkles",
+        "popular": true
+      }
+    ],
+    "pedicure": [
+      {
+        "id": 36,
+        "name": "Classic Pedicure",
+        "description": "Essential foot care and polish",
+        "price": 1000,
+        "duration": "45 min",
+        "icon": "fas fa-socks"
+      },
+      {
+        "id": 37,
+        "name": "Spa Pedicure",
+        "description": "Premium foot treatment with scrub",
+        "price": 1500,
+        "duration": "60 min",
+        "icon": "fas fa-socks",
+        "popular": true
+      }
+    ]
+  },
+  "men": {
+    "mens-haircut": [
+      {
+        "id": 42,
+        "name": "Classic Haircut",
+        "description": "Traditional men's haircut with styling",
+        "price": 800,
+        "duration": "30 min",
+        "icon": "fas fa-cut",
+        "popular": true
+      },
+      {
+        "id": 43,
+        "name": "Premium Haircut",
+        "description": "Advanced styling with consultation",
+        "price": 1200,
+        "duration": "45 min",
+        "icon": "fas fa-cut"
+      }
+    ],
+    "beard-trim": [
+      {
+        "id": 47,
+        "name": "Beard Shaping",
+        "description": "Professional beard trimming and shaping",
+        "price": 400,
+        "duration": "20 min",
+        "icon": "fas fa-user"
+      },
+      {
+        "id": 48,
+        "name": "Beard Grooming",
+        "description": "Complete beard care with oil treatment",
+        "price": 600,
+        "duration": "30 min",
+        "icon": "fas fa-user",
+        "popular": true
+      }
+    ]
+  }
+}
